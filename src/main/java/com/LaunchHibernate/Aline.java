@@ -9,7 +9,9 @@ public class Aline {
     private int aid ;
     private String name;
     private String tech;
-
+    public Aline(){
+        System.out.println("this iscall to constructor");
+    }
     public int getAid() {
         return aid;
     }
@@ -28,6 +30,15 @@ public class Aline {
 
     public void setTech(String tech) {
         this.tech = tech;
+    }
+
+    @Override
+    public String toString() {
+        return "Aline{" +
+                "aid=" + aid +
+                ", name='" + name + '\'' +
+                ", tech='" + tech + '\'' +
+                '}';
     }
 
     public void setName(String name) {
