@@ -15,7 +15,7 @@ public class Main {
         al.setName("Aman");
         al.setTech("Java");
         Configuration configuration = new Configuration();
-        configuration.addAnnotatedClass(com.LaunchHibernate.Aline.class);
+        configuration.addAnnotatedClass(com.LaunchHibernate.Aline.class);//do this else write mapping in hibernate.cfg.xml
 
         configuration.configure("hibernate.cfg.xml");
         SessionFactory sessionFactory = configuration.buildSessionFactory();

@@ -30,6 +30,6 @@
         <property name="hibernate.hbm2ddl.auto">
             update
         </property>
-        <mapping class="com.LaunchHibernate.Aline"/>
+<!--        <mapping class="com.LaunchHibernate.Aline"/>-->
     </session-factory>
 </hibernate-configuration>
