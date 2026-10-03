@@ -10,6 +10,7 @@ public class StudentInfo {
     private String name;
     private  String city;
     @Lob
+    @Column(length = 100000000)
     private byte[] image;
     @Lob
     private  char[] textFile;
