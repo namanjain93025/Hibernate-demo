@@ -1,24 +1,17 @@
-package com.LaunchAssociation;
+package com.LaunchAssociationOneToMany;
 
+import com.LaunchAssociationOneToOne.Question;
 import jakarta.persistence.*;
-
 @Entity
-public class Answer {
+public class AnswerTable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id ;
+    private int id;
     private String answer;
-    @OneToOne(cascade = CascadeType.ALL)
-    private Question question ;
-    public Answer(){
+    @ManyToOne(cascade = CascadeType.ALL)
+    private QuestionTable question;
+    public AnswerTable(){
         System.out.println("This is Answer class constructor");
-    }
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getAnswer() {
@@ -29,11 +22,11 @@ public class Answer {
         this.answer = answer;
     }
 
-    public Question getQuestion() {
+    public QuestionTable getQuestion() {
         return question;
     }
 
-    public void setQuestion(Question question) {
+    public void setQuestion(QuestionTable question) {
         this.question = question;
     }
 }

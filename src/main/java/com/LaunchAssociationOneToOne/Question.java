@@ -1,4 +1,4 @@
-package com.LaunchAssociation;
+package com.LaunchAssociationOneToOne;
 
 import jakarta.persistence.*;
 

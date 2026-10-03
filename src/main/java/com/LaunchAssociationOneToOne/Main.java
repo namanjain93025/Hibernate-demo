@@ -1,4 +1,4 @@
-package com.LaunchAssociation;
+package com.LaunchAssociationOneToOne;
 
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
