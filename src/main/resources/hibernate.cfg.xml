@@ -31,5 +31,7 @@
             update
         </property>
 <!--        <mapping class="com.LaunchHibernate.Aline"/>-->
+        <mapping class="com.LaunchAssociation.Question"/>
+        <mapping class="com.LaunchAssociation.Answer"/>
     </session-factory>
 </hibernate-configuration>
