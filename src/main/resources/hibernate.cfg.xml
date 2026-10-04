@@ -36,5 +36,6 @@
         <mapping class="com.LaunchAssociationOneToMany.AnswerTable"/>
         <mapping class="com.LaunchAssociationOneToMany.QuestionTable"/>
         <mapping class="com.LaunchLob.StudentInfo"/>
+        <mapping class="com.LaunchHQl.Teacher"/>
     </session-factory>
 </hibernate-configuration>
